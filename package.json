@@ -1,0 +1,26 @@
+{
+  "name": "buttoncssanimation",
+  "version": "1.0.0",
+  "description": "creating a buttong with fancy animation on hover",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sallivana/fancycssanimation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sallivana/fancycssanimation/issues"
+  },
+  "homepage": "https://github.com/sallivana/fancycssanimation#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "git-init": "^1.0.0"
+  }
+}
