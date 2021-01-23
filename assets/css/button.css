@@ -1,0 +1,69 @@
+/* ----------------------------
+/*  Name: button css animation
+    Author: Alyona Volkova
+    Version: 1.0
+/* -------------------------- */
+
+.clickable-area {
+    height: 80px; /* TODO var */
+    width: 216px; /* TODO var */
+    border: #000000 2px solid;
+    text-align: center;
+    font-family: Wotfard SemiBold;
+    font-size: 24px;
+    line-height: 32px;
+    background-color: #fff;
+}
+
+.secondary-button:hover .clickable-area {
+    cursor: pointer;
+    background-color: #F5DDE9;
+}
+
+.hover-area {
+    display: none;
+    height: 80px; /* TODO var */
+    width: 216px; /* TODO var */
+    margin: -16px 0 0 -16px;
+    overflow: hidden;
+}
+
+.secondary-button:hover .hover-area {
+    cursor: pointer;
+    display: block;
+}
+
+.invisible-bigger-area {
+    height: 80px; /* TODO var x N*/
+    width: 368px; /* TODO var x N */
+}
+
+.line {
+    position: relative;
+    width: 12px;
+    height: 100px;
+    float: left;
+}
+
+.line:after {
+    content: "";
+    display: none;
+    border-top: 1px solid #000000;
+    width: 120px;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+
+    animation: diagonal 700ms;
+    animation-timing-function: ease-out;
+}
+
+.secondary-button:hover .line:after {
+    display: block;
+}
+
+@keyframes diagonal {
+    0%       { width: 0px; }
+    100%      { width: 120px; }
+}
+
+/*TODO there's a weird bug that breaks animation if I hover on the right side*/
