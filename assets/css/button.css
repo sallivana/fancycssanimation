@@ -65,5 +65,3 @@
     0%       { width: 0px; }
     100%      { width: 120px; }
 }
-
-/*TODO there's a weird bug that breaks animation if I hover on the right side*/
